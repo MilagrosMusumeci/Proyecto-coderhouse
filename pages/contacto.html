@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+
+<body class="layout">
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <h1 class="header__titulo">¡Bienvenidos a esta nueva experiencia!</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </header>
+
+    <!-- NAVEGADOR -->
+
+    <nav class="nav">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <ul class="nav__links">
+            <li>
+                <a class="nav__link" href="../index.html"> HOME</a>
+            </li>
+            <li>
+                <a class="nav__link" href="../pages/cabañas.html"> CABAÑAS</a>
+            </li>
+            <li>
+                <a class="nav__link" href="../pages/servicios.html"> SERVICIOS</a>
+            </li>
+            <li>
+                <a class="nav__link" href="../pages/galeria.html"> GALERÍA</a>
+            </li>
+            <li>
+                <a class="nav__link" href="../pages/contacto.html"> CONTACTO</a>
+            </li>
+        </ul> 
+    </nav>
+
+    <!-- MAIN -->
+
+    <main class="main-contacto">
+        <div class="contenido-principal">
+            <form class="buscar" action="" method="get">
+                <input class="buscar__input" type="text" placeholder="Buscar...">
+            </form>
+
+            <div class="contenedor-mapa">
+                <div class="mapa"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867883.3937922157!2d-65.03295003692607!3d-31.820376596276287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2c71fec81fb3b%3A0x4a72e47257ab27ef!2sCaba%C3%B1as%20Cauqu%C3%A9n%2C%20Villa%20Yacanto%20de%20Calamichita!5e0!3m2!1ses-419!2sar!4v1636652122786!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>    
+
+            <div class="formulario">
+                <div class="consignas">
+                    <h2>CONTACTÁNOS</h2>
+                    <h3>Completá el formulario con tu consulta y en la brevedad un asesor se pondrá en contacto contigo</h3>
+                </div>
+            
+                <form action="" method="get">
+                    <label for="nombreyapellido">Nombre y apellido</label>
+                    <input type="text" placeholder="Ingrese su nombre" required>
+
+                    <div>
+                        <label for="huesped">Cantidad de huéspedes</label>
+                        2 <input type="radio" name="huesped" required>
+                        3 <input type="radio" name="huesped" required>
+                        4 <input type="radio" name="huesped" required>
+                        5 <input type="radio" name="huesped" required>
+                        6 <input type="radio" name="huesped" required>
+                    </div>  
+
+                    <div>
+                        <label for="provincia">Provincia</label>
+                            <select name="provincia">
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Entre Ríos">Entre Ríos</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="">La Pampa</option>
+                                <option value="La Pampa">La Rioja</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Neuquén">Neuquén</option>
+                                <option value="Río Negro">Río Negro</option>
+                                <option value="Salta">Salta</option>
+                                <option value="San Juan">San Juan</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Santiago del Estero">Santiago del Estero</option>
+                                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                <option value="Tucumán">Tucumán</option>
+                            </select>
+                    </div>
+
+                    <div>
+                        <label for="Teléfono">Teléfono</label>
+                        <input type="text" placeholder="Ingrese su teléfono" required>
+                    </div>
+
+                    <div>
+                        <label for="Correo Electrónico">Correo electrónico</label>
+                        <input type="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+
+                    <div>
+                        <label for="Asunto">Asunto</label>
+                        <input type="text" placeholder="Ingrese asunto">
+                    </div>
+
+                    <div>
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="MENSAJE" cols="30" rows="10"></textarea>
+                        <br>
+                        <button>ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        
+        <div class="social-copyright">
+            <div class="datos-de-contacto"> 
+                <a href="">+54 9 11 3763-2690</a>
+                <a href="https://www.instagram.com/complejocauquen/">@complejocauquen</a>
+                <a href="">complejocauquen@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div>COPYRIGHT  CAUQUÉN 2022</div>
+            <div>TODOS LOS DERECHOS RESERVADOS</div>
+        </div>
+    </footer>
+</body>
+</html>

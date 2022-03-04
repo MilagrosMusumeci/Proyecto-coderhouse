@@ -1,0 +1,368 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------DESKTOP-------------------------------------------------------------------*/
+@media only screen and (min-width:600px) {
+    /* INICIO DEL BODY */
+        .layout{
+                display: grid;
+                grid-template-columns:10% auto;
+                grid-template-rows: 8% auto 5%;
+                grid-template-areas:"header header"
+                                    "nav main"
+                                    "footer footer";
+                column-gap:5px;
+                row-gap: 5px;
+        }
+    
+    /* FIN DEL BODY */
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL HEADER */
+
+    .header{
+        display: grid;
+        height: 20vh;
+        grid-area: header;
+        background-image: url("../images/Header\ grids.jpg");
+        background-repeat:no-repeat;
+}
+
+    .header__titulo{
+        color: #a57c5b;
+        font-style: italic;
+        font-family:'Dancing Script', cursive;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 250%;
+        }
+
+    /* FIN DEL HEADER*/        
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL NAVEGADOR */ 
+
+    .nav{
+        background-color: #eee3d9b4;
+        display: grid;
+        grid-area: nav;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .nav__links{
+        list-style-type: none;
+        justify-self: center;
+        align-self: flex-start;
+        line-height: 50px;
+    }
+
+    .nav__link{
+        text-decoration: none;
+        font-weight: bolder;
+        width: auto;
+    }
+
+    /*FIN DEL NAVEGADOR*/
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL MAIN DE CABAÑAS */
+    .main-cabañas{
+        display: grid;
+        grid-area: main;
+        background-color: #c5db89b4;
+    }
+
+    .contenido-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buscar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .buscar__input{
+        height: 30px;
+        border-radius: 25px;
+    }
+
+    .cab-1, .cab-2 {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .cab-1__bloque-1, .cab-1__bloque-2, .cab-2__bloque-1, .cab-2__bloque-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap:5px;
+        row-gap: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .cab-1__titulo, .cab-2__titulo{
+        display: flex;
+        flex-direction: column; 
+        font-style: normal;
+        font-family: 'Cormorant Garamond';
+        text-align: center;
+        color: rgb(121, 79, 79);
+        font-size: 30px;
+    }
+
+    .cab-1__descrip, .cab-2__descrip {
+        display: flex;
+        justify-content: center ;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .cab-1__foto1, .cab-1__foto2, .cab-1__foto3, .cab-1__foto4, .cab-2__foto1, .cab-2__foto2, .cab-2__foto3, .cab-2__foto4 {
+        height: auto;
+        width: auto;
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 50px;
+        box-shadow: 0px 2px 8px 0px black;  
+    }
+
+    /* FIN DEL MAIN DE CABAÑAS */
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL FOOTER */
+
+    .footer{
+        display: grid;
+        grid-area: footer;
+        background-color: rgb(236, 226, 226);
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-style: bold;
+    }
+
+    .social-copyright{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .datos-de-contacto{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .copyright {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 100;
+    }
+    /* FIN DEL FOOTER */
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*---------------------------------------------------MOBILE----------------------------------------------------*/
+@media only screen and (max-width:600px) {
+    /* INICIO DEL BODY */
+        .layout{
+                display: flex;
+                flex-direction: column;
+                column-gap:5px;
+                row-gap: 5px;
+        }
+    /* FIN DEL BODY */
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL HEADER */
+        .header{
+            height: 13vh;
+            background-image: url("../images/Header\ grids.jpg");
+            background-repeat:no-repeat;
+            background-position: center;
+        }
+
+        .header__titulo{
+        color: #a57c5b;
+        font-style: italic;
+        font-family:'Dancing Script', cursive;
+        padding-top: 25px;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 30px;
+        
+        }
+    /* FIN DEL HEADER*/        
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL NAVEGADOR */ 
+        .nav{
+        background-color: #eee3d9b4;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 15px;
+        }
+
+        .nav__links{
+        list-style-type: none;
+        justify-self: center;
+        align-self: flex-start;
+        flex-wrap: wrap;
+        line-height: 30px;
+        }
+
+        .nav__link{
+        text-decoration: none;
+        font-weight: bolder;
+        }
+    /*FIN DEL NAVEGADOR*/
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL MAIN DE CABAÑAS */
+        .main-cabañas{
+        display: grid;
+        grid-area: main;
+        background-color: #c5db89b4;
+        }
+
+        .contenido-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        .buscar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 10px;
+        padding-top: 10px;
+        }
+
+        .buscar__input{
+        height: 30px;
+        border-radius: 25px;
+        }
+
+        .cab-1, .cab-2{
+        padding: 15px;
+        margin: 15px;
+        }
+
+        .cab-1__bloque-1, .cab-1__bloque-2, .cab-2__bloque-1, .cab-2__bloque-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap:5px;
+        row-gap: 5px;
+        padding-top: 0%;
+        padding-bottom: 5px;
+        padding-left: 50px;   
+
+        }
+
+        .cab-1__titulo, .cab-2__titulo{
+        display: flex;
+        flex-direction: column; 
+        font-style: normal;
+        font-family: 'Cormorant Garamond';
+        text-align: center;
+        color: rgb(121, 79, 79);
+        font-size: 30px;
+        }
+
+        .cab-1__descrip, .cab-2__descrip {
+        display: flex;
+        justify-content: center ;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        }
+
+        .cab-1__foto1, .cab-1__foto2, .cab-1__foto3, .cab-1__foto4, .cab-2__foto1, .cab-2__foto2, .cab-2__foto3, .cab-2__foto4{
+        height: auto;
+        width: auto;
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 50px;
+        box-shadow: 0px 2px 8px 0px black;
+
+        }
+    /* FIN DEL MAIN DE CABAÑAS */
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+
+    /* INICIO DEL FOOTER */
+        .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: rgb(236, 226, 226);
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-style: bold;
+        padding: 10px;
+        padding-bottom: 5px;
+        }
+
+        .social-copyright{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+
+        .datos-de-contacto{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-size: small;
+        }
+
+        .copyright{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: smaller;
+        }
+    /* FIN DEL FOOTER */
+    /*-------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------*/
+}
