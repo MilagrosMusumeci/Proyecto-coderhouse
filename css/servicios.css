@@ -141,7 +141,6 @@
 
 
         .boton{
-            width: 100%;
             border: none;
             font-size: 1rem;
             font-weight: bold;
@@ -150,6 +149,21 @@
             background-color: #ca8499f2;
             border-radius: 15px;
             width: 55%;
+            height: 13%;
+        }
+
+        .boton:focus{
+            /*width: 100%;*/
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #f3e1e1;
+            padding: 1rem 0 1rem 0;
+            background-color: #ce5177f2;
+            transition: width 2s, height 2s, background-color 2s;
+            border-radius: 15px;
+            width: 60%;
+            height: 15%;
         }
 
         .icono {
