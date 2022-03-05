@@ -103,7 +103,7 @@
         border-radius: 25px;
     }
 
-    .cab-1, .cab-2 {
+    .cab-1, .cab-2{
         padding: 15px;
         margin: 15px;
     }
@@ -137,12 +137,19 @@
     }
 
     .cab-1__foto1, .cab-1__foto2, .cab-1__foto3, .cab-1__foto4, .cab-2__foto1, .cab-2__foto2, .cab-2__foto3, .cab-2__foto4 {
-        height: auto;
-        width: auto;
-        max-height: 400px;
-        max-width: 400px;
+        height: 400px;
+        width: 300px;
         border-radius: 50px;
-        box-shadow: 0px 2px 8px 0px black;  
+        box-shadow: 0px 2px 8px 0px black;
+        transition: width 2s, height 2s;
+        ;
+    }
+
+    .cab-1__foto1:hover , .cab-1__foto2:hover , .cab-1__foto3:hover , .cab-1__foto4:hover , .cab-2__foto1:hover, .cab-2__foto2:hover, .cab-2__foto3:hover, .cab-2__foto4:hover{
+        height: 500px;
+        width: 400px;
+        border-radius: 50px;
+        box-shadow: 0px 2px 8px 0px black;
     }
 
     /* FIN DEL MAIN DE CABAÑAS */
